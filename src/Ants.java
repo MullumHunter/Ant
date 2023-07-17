@@ -60,4 +60,5 @@ public class Ants {
 
         System.out.println("Количество раундов: " + calculateRounds(n, left, right, antLefMov, antRigMov));
     }
+
 }
