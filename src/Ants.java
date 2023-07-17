@@ -1,3 +1,6 @@
+
+//TODO аписать тесты
+
 public class Ants {
     public static int calculateRounds(int n, int left, int right, int antLefMov, int antRigMov) {
 
@@ -28,7 +31,6 @@ public class Ants {
                 beforeFallingLeft = (round * 2) + left + 1;
                 beforeFallingRight = (round * 2) + (n - right) + 1;
                 maxBeforeFalling = Math.min(beforeFallingLeft, beforeFallingRight);
-                System.out.println(round);
                 System.out.println("Не четный: " + beforeFallingLeft + " " + beforeFallingRight);
                 System.out.println("На встречу друг другу");
 
@@ -44,9 +46,9 @@ public class Ants {
     }
 
     public static void main(String[] args) {
-        int n = 7;
-        int left = 5 ;
-        int right = 6;
+        int n = 12;
+        int left = 1 ;
+        int right = 10;
         //ожидаеться в результате 2
 
        /* Стартовое движение муравья по оси X ( +1 или -1).
